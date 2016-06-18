@@ -110,7 +110,7 @@ body{
 	line-height: 40px;
 }
 .sizer {
-  width: 300px;
+  width: 300px;    
   height: 10px;
 }
 .embed-responsive video {
@@ -126,13 +126,21 @@ body{
     margin-left: -90px;
     margin-top: -10px;
 }
-.carousel-inner img{
-    width: 100%;
 
+.right {
+    padding: 20px 0;
 }
-#myCarousel{
-   /* width: 800px;*/
+.left {
+    padding-top: 20px;
 }
-.carousel-caption p{
-    font-size: 20px;
+.header-right {
+    margin-top: 20px;
+}
+/*.carousel-inner > .item.next.left{
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}*/
+.carousel-inner > .img{
+    width="100%";
 }
