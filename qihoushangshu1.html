@@ -9,6 +9,7 @@
 <title>骑猴上树的个人空间</title>
 <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="js/bootstrap/css/bootstrap-add.css"/>
+  
  </head>
 <body>
 
@@ -23,7 +24,12 @@
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a href="qihoushangshu.html" class="navbar-brand">骑猴上树</a>
+<a href="index.jsp" class="navbar-brand">骑猴上树</a>
+	<!--<div class="nav">
+		<audio id="audio" controls  autoplay="autoplay"  loop="loop">
+			<source src="music/史力嘉 - 红山茶.mp3" type="audio/mpeg" codecs="mp3"/>
+		</audio>
+	</div>-->
 </div>
 <!-- data-toggle="collapse" 添加到您想要展开或折叠的组件的链接上。
 href 或 data-target 属性添加到父组件，它的值是子组件的 id。 -->
@@ -38,7 +44,7 @@ href 或 data-target 属性添加到父组件，它的值是子组件的 id。 -
 </ul>
 	<ul class="nav navbar-nav navbar-right">
 		<div class="nav new-header-right">
-		<audio id="audio" controls    loop="loop">
+		<audio id="audio" controls  autoplay="autoplay"  loop="loop">
 			<source src="music/史力嘉 - 红山茶.mp3" type="audio/mpeg" codecs="mp3"/>
 		</audio>
 	</div>
@@ -49,8 +55,10 @@ href 或 data-target 属性添加到父组件，它的值是子组件的 id。 -
 </nav>	
 <!-- 导航 -->
 <!-- home -->
-	<div id="ab" class="border-all-color" style="background-color: rgba(3, 169, 244, 0.96);">
-		<div class="top_banner">
+<section id="home">
+	<div >
+	    <div class="container">
+	        <div class="col-md-12 ">
 				<div id="myCarousel" class="carousel slide">
 				   <!-- 轮播（Carousel）指标 -->
 				   <ol class="carousel-indicators">
@@ -61,19 +69,19 @@ href 或 data-target 属性添加到父组件，它的值是子组件的 id。 -
 				   <!-- 轮播（Carousel）项目 -->
 				   <div class="carousel-inner">
 					  <div class="item active">
-						 <img src="images/4.png" alt="First slide" class="img-responsive">
+						 <img src="images/1.jpg" alt="First slide" >
 						  <div class="carousel-caption">
 							  <p></p>
 						  </div>
 					  </div>
 					  <div class="item">
-						 <img src="images/5.png" alt="Second slide" class="img-responsive">
+						 <img src="images/2.jpg" alt="Second slide">
 						  <div class="carousel-caption">
 							  <p></p>
 						  </div>
 					  </div>
 					  <div class="item">
-						 <img src="images/6.png" alt="Third slide" class="img-responsive">
+						 <img src="images/3.jpg" alt="Third slide">
 						  <div class="carousel-caption">
 							  <p></p>
 						  </div>
@@ -84,63 +92,14 @@ href 或 data-target 属性添加到父组件，它的值是子组件的 id。 -
 					  data-slide="prev">上一页</a>
 				   <a class="carousel-control right" href="#myCarousel" 
 					  data-slide="next">下一页</a>
-				</div>
-			</div>
+				</div> 
+	        </div>
+	    </div>
 	</div>
-<div class="container">
-	<!--主页下半部分-->
-   <div class="border-all-color">
-	   <div class="wrap1">
-	   <div class="col-md-4" >
-		   12
-	   </div>
-		   <div class="col-md-4" >
-			   34
-		   </div>
-		   <div class="col-md-4" >
-			   56
-		   </div>
-	   </div>
-   </div>
-	<div class="border-all-color">
-		<div class="wrap1">
-			<ul>
-				<li>麦子学院麦子学院麦子学院麦子学院</li>
-				<li>2333麦子学院麦子学院麦子学院麦子学院33333333333</li>
-				<li>344444麦子学院麦子学院麦子学院44444444</li>
-			</ul>
-		</div>
-	</div>
-	<!--主页下半部分-->
+</section>
 <!-- home -->
-</div>
+
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/bootstrap/js/bootstrap.min.js"></script>
-<Script>
-	$(function(){
-		$('#myCarousel').on('slide.bs.carousel', function () {
-			//alert("当调用 slide 实例方法时立即触发该事件。");
-			/*alert($('[style="background-color: rgba(3, 169, 244, 0.96);"]').css("background-color"));
-			$('[style="background-color: rgba(3, 169, 244, 0.96);"]').css("background-color","red");*/
-
-			//	alert($('#ab').css('background-color'))
-			//$('#ab').css('background-color','red')
-
-			var color = $('#ab').css('background-color');
-			var c1 = 'rgba(3, 169, 244, 0.960784)';
-			var c2 = 'rgb(139, 195, 74)';
-			var c3 = 'rgb(136, 130, 130)';
-			if(c1 == color){
-				$('#ab').css('background-color',c2)
-			}else if(c2==color){
-				$('#ab').css('background-color',c3)
-			}else if(c3==color){
-				$('#ab').css('background-color',c1)
-			}
-		});
-	});
-
-</script>
 </body>
 </html>
-

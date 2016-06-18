@@ -132,7 +132,52 @@ body{
 }
 #myCarousel{
    /* width: 800px;*/
+    margin-top: 20px;
 }
 .carousel-caption p{
     font-size: 20px;
+}
+.new-header-right{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.border-all-color{
+    height: 420px;
+    position: relative;
+}
+
+.top_banner{
+    margin: 0 auto;
+    width: 1160px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+ .wrap1{
+     margin: 0 auto;
+     width: 1160px;
+     height: 100%;
+     overflow: hidden;
+     position: relative;
+}
+.border-all-color .warp1 ul {
+    overflow: hidden;
+}
+ul, ol {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+.border-all-color .warp1 ul li {
+    width: 290px;
+    height: 70px;
+    padding-top: 6px;
+    padding-bottom: 11px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    border-right: 1px solid #ededed;
 }
