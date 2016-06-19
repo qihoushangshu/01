@@ -38,8 +38,8 @@ href 或 data-target 属性添加到父组件，它的值是子组件的 id。 -
 </ul>
 	<ul class="nav navbar-nav navbar-right">
 		<div class="nav new-header-right">
-		<audio id="audio" controls    loop="loop">
-			<source src="music/史力嘉 - 红山茶.mp3" type="audio/mpeg" codecs="mp3"/>
+		<audio id="audio" controls autoplay   loop="loop">
+			<source src="music/史力嘉 - 红山茶.mp3" type="audio/mpeg"  codecs="mp3"/>
 		</audio>
 	</div>
 	</ul>
@@ -80,10 +80,10 @@ href 或 data-target 属性添加到父组件，它的值是子组件的 id。 -
 					  </div>
 				   </div>
 				   <!-- 轮播（Carousel）导航 -->
-				   <a class="carousel-control left" href="#myCarousel"
-					  data-slide="prev">上一页</a>
-				   <a class="carousel-control right" href="#myCarousel" 
-					  data-slide="next">下一页</a>
+				   <a class="carousel-control left"  href="#myCarousel"
+					  data-slide="prev" onclick="setColor('pre');">上一页</a>
+				   <a class="carousel-control right" href="#myCarousel"
+					  data-slide="next" onclick="setColor('next');">下一页</a>
 				</div>
 			</div>
 	</div>
@@ -92,55 +92,31 @@ href 或 data-target 属性添加到父组件，它的值是子组件的 id。 -
    <div class="border-all-color">
 	   <div class="wrap1">
 	   <div class="col-md-4" >
-		   12
+		   <h2>威廉·巴特勒·叶芝</h2>
+		   <p>
+			   威廉·巴特勒·叶芝（William Butler Yeats,1865年6月13日~1939年1月28日），亦译“叶慈”、“耶茨”，爱尔兰诗人、剧作家和散文家，著名的神秘主义者，是“爱尔兰文艺复兴运动”的领袖，也是艾比剧院（Abbey Theatre）的创建者之一。
+		   </p>
 	   </div>
 		   <div class="col-md-4" >
-			   34
+			   <h2>海子</h2>
+			<p>
+				海子（1964-1989），原名查海生，出生于安徽省安庆市怀宁县高河镇查湾村，当代青年诗人。 海子在农村长大。1979年15岁时考入北京大学法律系，1982年大学期间开始诗歌创作。1983年自北大毕业后分配至北京中国政法大学哲学教研室工作。1989年3月26日在山海关附近卧轨自杀，年仅25岁。
+			</p>
 		   </div>
 		   <div class="col-md-4" >
-			   56
+			   <h2>司小东</h2>
+			   <p>
+				   司小东(1987-),当代仅存大师。
+			   </p>
 		   </div>
 	   </div>
    </div>
-	<div class="border-all-color">
-		<div class="wrap1">
-			<ul>
-				<li>麦子学院麦子学院麦子学院麦子学院</li>
-				<li>2333麦子学院麦子学院麦子学院麦子学院33333333333</li>
-				<li>344444麦子学院麦子学院麦子学院44444444</li>
-			</ul>
-		</div>
-	</div>
 	<!--主页下半部分-->
 <!-- home -->
 </div>
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/bootstrap/js/bootstrap.min.js"></script>
-<Script>
-	$(function(){
-		$('#myCarousel').on('slide.bs.carousel', function () {
-			//alert("当调用 slide 实例方法时立即触发该事件。");
-			/*alert($('[style="background-color: rgba(3, 169, 244, 0.96);"]').css("background-color"));
-			$('[style="background-color: rgba(3, 169, 244, 0.96);"]').css("background-color","red");*/
-
-			//	alert($('#ab').css('background-color'))
-			//$('#ab').css('background-color','red')
-
-			var color = $('#ab').css('background-color');
-			var c1 = 'rgba(3, 169, 244, 0.960784)';
-			var c2 = 'rgb(139, 195, 74)';
-			var c3 = 'rgb(136, 130, 130)';
-			if(c1 == color){
-				$('#ab').css('background-color',c2)
-			}else if(c2==color){
-				$('#ab').css('background-color',c3)
-			}else if(c3==color){
-				$('#ab').css('background-color',c1)
-			}
-		});
-	});
-
-</script>
+<script src="js/bootstrap/js/qihoushangshu.js"></script>
 </body>
 </html>
 
