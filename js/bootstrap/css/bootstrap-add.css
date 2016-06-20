@@ -154,7 +154,10 @@ body{
     overflow: hidden;
     position: relative;
 }
-
+.border-all-recommand{
+    height: 200px;
+    position: relative;
+}
  .wrap1{
      margin: 0 auto;
      width: 1160px;
@@ -162,7 +165,7 @@ body{
      overflow: hidden;
      position: relative;
 }
-.border-all-color .warp1 ul {
+.border-all-recommand .warp1 ul {
     overflow: hidden;
 }
 ul, ol {
@@ -171,7 +174,7 @@ ul, ol {
     margin: 0;
     padding: 0;
 }
-.border-all-color .warp1 ul li {
+.border-all-recommand .warp1 ul li {
     width: 290px;
     height: 70px;
     padding-top: 6px;

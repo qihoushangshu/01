@@ -38,7 +38,7 @@ href 或 data-target 属性添加到父组件，它的值是子组件的 id。 -
 </ul>
 	<ul class="nav navbar-nav navbar-right">
 		<div class="nav new-header-right">
-		<audio id="audio" controls autoplay   loop="loop">
+		<audio id="audio" controls   loop="loop">
 			<source src="music/史力嘉 - 红山茶.mp3" type="audio/mpeg"  codecs="mp3"/>
 		</audio>
 	</div>
@@ -49,14 +49,15 @@ href 或 data-target 属性添加到父组件，它的值是子组件的 id。 -
 </nav>	
 <!-- 导航 -->
 <!-- home -->
+div class="container">
 	<div id="ab" class="border-all-color" style="background-color: rgba(3, 169, 244, 0.96);">
 		<div class="top_banner">
 				<div id="myCarousel" class="carousel slide">
 				   <!-- 轮播（Carousel）指标 -->
 				   <ol class="carousel-indicators">
-					  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					  <li data-target="#myCarousel" data-slide-to="1"></li>
-					  <li data-target="#myCarousel" data-slide-to="2"></li>
+					  <li data-target="#myCarousel" onclick="slideIndex('0')" data-slide-to="0" class="active"></li>
+					  <li data-target="#myCarousel" onclick="slideIndex('1')" data-slide-to="1"></li>
+					  <li data-target="#myCarousel" onclick="slideIndex('2')" data-slide-to="2"></li>
 				   </ol>   
 				   <!-- 轮播（Carousel）项目 -->
 				   <div class="carousel-inner">
@@ -87,9 +88,10 @@ href 或 data-target 属性添加到父组件，它的值是子组件的 id。 -
 				</div>
 			</div>
 	</div>
+</div>
 <div class="container">
 	<!--主页下半部分-->
-   <div class="border-all-color">
+   <div class="border-all-recommand">
 	   <div class="wrap1">
 	   <div class="col-md-4" >
 		   <h2>威廉·巴特勒·叶芝</h2>
@@ -114,6 +116,18 @@ href 或 data-target 属性添加到父组件，它的值是子组件的 id。 -
 	<!--主页下半部分-->
 <!-- home -->
 </div>
+<!--第三部分-->
+<div class="container">
+	<div class="col-md-6 wow fadeInLeft">
+		222222222222222222222222222222222222222222222222222222222
+	</div>
+
+	<div class="col-md-6 wow fadeInLeft">
+		33333333333333333333333333333333333333333333333333333333
+	</div>
+</div>
+
+<!--第三部分-->
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/bootstrap/js/qihoushangshu.js"></script>

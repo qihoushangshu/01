@@ -1,12 +1,23 @@
 /**
  * Created by Administrator on 2016/6/20.
  */
-var pre = false;
+
+var pre = null;
+var index = null;
 function setColor(flag) {
     if('pre' == flag){
         pre = true;
     }else {
         pre = false;
+    }
+}
+function slideIndex(obj) {
+    if('0'==obj){
+        index = '0'
+    }else if('1' == obj){
+        index = '1';
+    }else{
+        index = '2';
     }
 }
 $(function(){
@@ -36,14 +47,23 @@ $(function(){
             }
             pre = null;
         }else{
-            if(c1 == color || c4 == color){
-                $('#ab').css('background-color',c2);
-            }else if(c2==color){
-                $('#ab').css('background-color',c3);
-            }else if(c3==color){
-                $('#ab').css('background-color',c1);
+            if(index != null){
+                if('0'==index){
+                    $('#ab').css('background-color',c1);
+                }else if('1'==index){
+                    $('#ab').css('background-color',c2);
+                }else {
+                    $('#ab').css('background-color',c3);
+                }
+            }else{
+                if(c1 == color || c4 == color){
+                    $('#ab').css('background-color',c2);
+                }else if(c2==color){
+                    $('#ab').css('background-color',c3);
+                }else if(c3==color){
+                    $('#ab').css('background-color',c1);
+                }
             }
         }
-
     });
 });
